@@ -1,0 +1,516 @@
+/********** Template CSS **********/
+:root {
+    --primary: #3CB815;
+    --secondary: #F65005;
+    --light: #F7F8FC;
+    --dark: #111111;
+}
+
+body{
+    margin: 2%;
+}
+
+/*** Section Header ***/
+.section-header {
+    position: relative;
+    padding-top: 25px;
+}
+
+.section-header::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+}
+
+.section-header.text-start::before,
+.section-header.text-start::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+.nav{
+    justify-content: space-between;
+    
+}
+/* Para un ícono de color negro */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.carousel-caption{
+    padding: 10px 40px;
+    margin: 0px 10px;
+    margin-bottom: 20%;
+    border-radius: 40px;
+    text-align: left;
+    
+}
+#img{
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+#imgText{
+    font-size: 3.5rem;
+    padding: 10px 40px;
+    font-family: 'Times New Roman', serif;
+    line-height: 1.2;
+    letter-spacing: 0.05em; 
+}
+
+#btn1{
+    background-color: green;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 40px;
+    margin-left: -10px;
+    
+}
+#btn2{
+    background-color: red;
+    color: white;
+    border-radius: 40px;
+    padding: 10px 40px;
+    margin: 0px 10px;
+}
+
+
+.containerFrutas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 50px auto;
+    
+}
+.image-sectionMejoresFrutas {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+.text-sectionMejoresFrutas {
+    flex: 2;
+    margin-left: 20%;
+}
+
+.text-sectionMejoresFrutas h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-sectionMejoresFrutas p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+
+.cta-buttonMejoresFrutas {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttonMejoresFrutas:hover {
+    background-color: #218838;
+}
+
+.nos-caracteriza-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f7f6f6;
+    width: 100%;
+    margin: 50px auto;
+    border-radius: 10px;
+    
+}
+
+.nos-caracteriza-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.nos-caracteriza-header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+
+.nos-caracteriza-features {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.nos-caracteriza-feature-box {
+    background-color: white;
+    padding: 20px;
+    padding-top: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 30%;
+    height: auto;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+}
+
+.nos-caracteriza-feature-box:hover {
+    transform: translateY(-10px);
+}
+
+.nos-caracteriza-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.nos-caracteriza-title {
+    font-size: 1.5rem;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.nos-caracteriza-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.nos-caracteriza-link {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.nos-caracteriza-link:hover {
+    background-color: #218838;
+}
+
+
+
+/* Contenedor principal */
+.productos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Encabezado de sección */
+.section-headerP {
+    position: relative;
+    padding-top: 25px;
+    display: inline;
+}
+
+.section-headerP::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 0;
+    left: 2.8%;
+    transform: translateX(-50%);
+    background: var(--primary);
+}
+
+.section-headerP::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 10px;
+    left: 4%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+}
+
+.section-headerP.text-start::before,
+.section-headerP.text-start::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+.section-headerP{
+    text-align: left;
+}
+
+/* Tabs de categorías */
+.category-tabs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    margin-top: -60px;
+    margin-left: 70%;
+    
+}
+
+.category-tabs li {
+    display: inline-block;
+}
+
+.category-tabs li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #28a745;
+    color: #28a745;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.category-tabs li a:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Grid de productos */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+/* Tarjeta de producto */
+.producto-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+}
+
+.producto-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.producto-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.price {
+    font-size: 1.2rem;
+    color: #28a745;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Acciones de tarjeta */
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.card-actions a {
+    text-decoration: none;
+    color: #28a745;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 1px solid #28a745;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-actions a:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Contenedor principal */
+.visita-fincas-container {
+    background-color: #14b13e; /* Color de fondo verde */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Contenido */
+.contentFinca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+/* Sección de texto */
+.text-sectionFinca {
+    max-width: 70%;
+    margin-left: 5%;
+}
+
+.text-sectionFinca h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.text-sectionFinca p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Sección del botón */
+.button-sectionFinca {
+    max-width: 30%;
+    text-align: right;
+}
+
+.btn-ingresar {
+    background-color: #fe5c0e; /* Color del botón */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ingresar:hover {
+    background-color: #e04b05;
+}
+
+@media (max-width: 768px) {
+    .containerFrutas {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .text-sectionMejoresFrutas {
+        margin-left: 0;
+    }
+
+    .nos-caracteriza-features {
+        flex-direction: column;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0; /* Elimina el margen grande */
+        margin-top: 20px; /* Ajusta el espacio si es necesario */
+        justify-content: space-around;
+    }
+
+    .section-headerP {
+        text-align: center; /* Ajustar la alineación del texto */
+        margin-bottom: 20px; /* Para agregar espacio entre el texto y los botones */
+    }
+    .containerFooter{
+        margin: 4%;
+    }
+    .text-sectionFinca h1 {
+        font-size: 1.8rem; /* Tamaño de fuente ajustado para tabletas */
+    }
+
+    .text-sectionFinca p {
+        font-size: 0.9rem; /* Tamaño de fuente ajustado para tabletas */
+    }
+    
+    .contentFinca {
+        padding: 5px; /* Menor padding en móviles */
+    }
+}
+
+/* Media Queries para móviles */
+@media (max-width: 480px) {
+    .category-tabs li a {
+        padding: 8px 12px; /* Espaciado ajustado para botones en móviles */
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño para botones */
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .text-sectionFinca h1 {
+        font-size: 1.5rem; /* Tamaño de fuente ajustado para móviles */
+    }
+
+    .text-sectionFinca p {
+        font-size: 0.8rem; /* Tamaño de fuente ajustado para móviles */
+    }
+
+    .contentFinca {
+        padding: 5px; /* Menor padding en móviles */
+    }
+
+    .section-headerP {
+        font-size: 1.5rem; /* Ajustar tamaño de fuente para el encabezado */
+    }
+    .containerFooter body{
+        margin: 4%;
+    }
+}
